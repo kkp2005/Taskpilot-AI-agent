@@ -1,7 +1,5 @@
-# TaskPilot — React AI Multi-Step Task Agent
-
-A presentation-ready React dashboard backed by FastAPI and Google Gemini. The dashboard does **not** display the API key or model selector. The Gemini key is kept in the backend `.env` file and never sent to the browser.
-
+# TaskPilot - Simple AI Agent that automates multi step task using LLMs + Tools.
+TaskPilot is an AI Powered task-planning application. Helps in converting an users goal into organised daily activities, our application uses Google Gemini to understand the user's goal and generate actionable task plans. 
 ## Live App
 Link - https://taskpilot-ai-agent-five.vercel.app/
 
