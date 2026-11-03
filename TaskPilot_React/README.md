@@ -2,6 +2,9 @@
 
 A presentation-ready React dashboard backed by FastAPI and Google Gemini. The dashboard does **not** display the API key or model selector. The Gemini key is kept in the backend `.env` file and never sent to the browser.
 
+## Live App
+link - https://taskpilot-ai-agent-five.vercel.app/
+
 ## Requirements
 - Windows 10/11
 - Python 3.10+
