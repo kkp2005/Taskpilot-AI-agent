@@ -20,3 +20,228 @@
 .results-page .metric-card{padding:17px;}
 .results-page .metric-value{font-size:32px;}
 @media(max-width:600px){.results-page .result-panel{padding:16px;}.results-page .metric-value{font-size:25px;}}
+
+
+/* ============================================================
+   TASKPILOT - ADAPTIVE EXECUTION SCHEDULE
+   ============================================================ */
+
+.schedule-day {
+  background: #fbfbfe;
+  border: 1px solid #eff0f6;
+  border-radius: 11px;
+  padding: 12px;
+  margin-bottom: 9px;
+}
+
+.schedule-day-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.schedule-day-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.schedule-day-info b {
+  display: block;
+  color: #44475f;
+  font-size: 11px;
+}
+
+.schedule-day-info span {
+  display: block;
+  margin-top: 4px;
+  color: #999daf;
+  font-size: 9px;
+}
+
+.schedule-day-hours {
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.schedule-day-hours b {
+  color: #6d5ce8;
+}
+
+.schedule-day-hours span {
+  color: #999daf;
+  font-size: 9px;
+}
+
+.schedule-day-tasks {
+  margin-top: 12px;
+  border-top: 1px solid #eff0f6;
+}
+
+.scheduled-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 3px;
+  border-bottom: 1px solid #f0f1f6;
+}
+
+.scheduled-task:last-child {
+  border-bottom: 0;
+}
+
+.scheduled-task-number {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: #f0edff;
+  color: #7563e5;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.scheduled-task-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.scheduled-task-content > span {
+  display: block;
+  color: #50536a;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.scheduled-task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.scheduled-task-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #999daf;
+  font-size: 9px;
+}
+
+.schedule-capacity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 9px;
+}
+
+.capacity-track {
+  height: 5px;
+  flex: 1;
+  background: #ececf4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.capacity-track i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #8878f2, #6553da);
+  border-radius: 10px;
+}
+
+.capacity-remaining {
+  color: #269b76;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.capacity-warning {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #d45c45;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.schedule-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.schedule-status-good {
+  background: #effaf5;
+  border: 1px solid #dcf2e7;
+  color: #218665;
+}
+
+.schedule-status-warning {
+  background: #fff7ed;
+  border: 1px solid #f8e4cb;
+  color: #b76c27;
+}
+
+.schedule-status b {
+  display: block;
+  font-size: 10px;
+}
+
+.schedule-status span {
+  display: block;
+  font-size: 9px;
+  margin-top: 4px;
+  opacity: .8;
+}
+
+.schedule-status strong {
+  font: 800 16px Manrope, sans-serif;
+  white-space: nowrap;
+}
+
+.schedule-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 11px;
+  margin-top: 10px;
+  border-radius: 9px;
+  background: #fff7ed;
+  border: 1px solid #f8e4cb;
+  color: #b76c27;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.schedule-warning svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+@media(max-width:600px) {
+
+  .schedule-day {
+    padding: 10px;
+  }
+
+  .schedule-day-hours {
+    font-size: 10px;
+  }
+
+  .scheduled-task-content > span {
+    font-size: 10px;
+  }
+
+  .schedule-status strong {
+    font-size: 14px;
+  }
+
+}
+
